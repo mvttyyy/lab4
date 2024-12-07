@@ -1,5 +1,5 @@
 ###### WYNIKI PROGRAMU
-
+```
 Hibernate: 
     insert 
     into
@@ -224,9 +224,9 @@ Triangle: sides = 5.0, 12.0, 13.0Color[red=255, green=255, blue=255, alpha=0.0]
 Triangle: sides = 3.0, 4.0, 5.0Color[red=255, green=255, blue=255, alpha=0.0]
 Triangle: sides = 5.0, 12.0, 13.0Color[red=255, green=255, blue=255, alpha=0.0]
 Triangle: sides = 8.0, 15.0, 17.0Color[red=255, green=255, blue=255, alpha=0.0]
-
+```
 ###### WYNIKI TESTÓW
-        
+```  
         ... 108 more
 Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 67
         at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
@@ -697,3 +697,4 @@ Color[red=255, green=255, blue=255, alpha=0.0][INFO] Tests run: 4, Failures: 0, 
 [INFO] Total time:  5.670 s
 [INFO] Finished at: 2024-12-07T15:55:35+01:00
 [INFO] ------------------------------------------------------------------------
+```
