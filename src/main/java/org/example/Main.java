@@ -15,19 +15,16 @@ public class Main {
         ShapeDAO shapeDAO = new ShapeDAO(sessionFactory);
 
         try {
-            Rectangle rectangle1 = new Rectangle(5.0, 10.0);
-            Rectangle rectangle2 = new Rectangle(3.0, 6.0);
-            Rectangle rectangle3 = new Rectangle(7.0, 14.0);
+            Rectangle rectangle1 = new Rectangle(4.0, 8.0);
+            Rectangle rectangle2 = new Rectangle(6.0, 12.0);
             shapeDAO.saveShape(rectangle1);
             shapeDAO.saveShape(rectangle2);
-            shapeDAO.saveShape(rectangle3);
 
-            Triangle triangle1 = new Triangle(3.0, 4.0, 5.0);
-            Triangle triangle2 = new Triangle(5.0, 12.0, 13.0);
-            Triangle triangle3 = new Triangle(8.0, 15.0, 17.0);
+            Triangle triangle1 = new Triangle(6.0, 8.0, 10.0);
+            Triangle triangle2 = new Triangle(7.0, 24.0, 25.0);
             shapeDAO.saveShape(triangle1);
             shapeDAO.saveShape(triangle2);
-            shapeDAO.saveShape(triangle3);
+
 
             List<Rectangle> rectangles = shapeDAO.getAllShapes(Rectangle.class);
             List<Triangle> triangles = shapeDAO.getAllShapes(Triangle.class);

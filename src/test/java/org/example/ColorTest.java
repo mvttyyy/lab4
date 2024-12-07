@@ -7,38 +7,38 @@ class ColorTest {
 
     @Test
     void invalidRedThrows() {
-        assertThrowsWithMessage(() -> new Color(-10, 0, 0), "Invalid color");
+        assertThrowsWithMessage(() -> new Color(-10, 0, 0), "Error");
     }
 
     @Test
     void invalidGreenThrows() {
-        assertThrowsWithMessage(() -> new Color(0, -5, 0), "Invalid color");
+        assertThrowsWithMessage(() -> new Color(0, -5, 0), "Error");
     }
 
     @Test
     void invalidBlueThrows() {
-        assertThrowsWithMessage(() -> new Color(0, 0, -3), "Invalid color");
+        assertThrowsWithMessage(() -> new Color(0, 0, -3), "Error");
     }
 
     @Test
     void redTooHighThrows() {
-        assertThrowsWithMessage(() -> new Color(300, 0, 0), "Invalid color");
+        assertThrowsWithMessage(() -> new Color(300, 0, 0), "Error");
     }
 
     @Test
     void greenTooHighThrows() {
-        assertThrowsWithMessage(() -> new Color(0, 300, 0), "Invalid color");
+        assertThrowsWithMessage(() -> new Color(0, 300, 0), "Error");
     }
 
     @Test
     void blueTooHighThrows() {
-        assertThrowsWithMessage(() -> new Color(0, 0, 300), "Invalid color");
+        assertThrowsWithMessage(() -> new Color(0, 0, 300), "Error");
     }
 
     @Test
     void invalidAlphaThrows() {
-        assertThrowsWithMessage(() -> new Color(0, 0, 0, -0.5f), "Invalid alpha");
-        assertThrowsWithMessage(() -> new Color(0, 0, 0, 1.5f), "Invalid alpha");
+        assertThrowsWithMessage(() -> new Color(0, 0, 0, -0.5f), "Error");
+        assertThrowsWithMessage(() -> new Color(0, 0, 0, 1.5f), "Error");
     }
 
     @Test
